@@ -20,7 +20,7 @@ steps:
     npm install --save-dev jest
     npm i -D jest-junit-reporter
     npm run build
-    npm run test
+    npm run test:cov
   displayName: 'npm install and build'
 
 - task: PublishTestResults@2
