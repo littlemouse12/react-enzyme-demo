@@ -25,7 +25,7 @@ module.exports = {
       // ".+\.less":"identify-obj-proxy", 
   },
   verbose: true,
-  collectCoverageFrom: ['src/**/*.{js,vue}', '!src/utils/auth.js', '!src/utils/request.js', 'src/components/**/*.{js,vue}'],
+  collectCoverageFrom: ['src/**/*.js','scripts/**/*.js','!src/config/*.js'],
   coverageDirectory: '<rootDir>/tests/unit/coverage',
   // 'collectCoverage': true,
   'coverageReporters': [
