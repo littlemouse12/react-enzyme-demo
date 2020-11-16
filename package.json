@@ -6,7 +6,7 @@
   "port": 3030,
   "scripts": {
     "test": "jest",
-    "test:c": "jest --coverage",
+    "test:cov": "jest  --coverage --ci --testResultsProcessor=./node_modules/jest-junit-reporter",
     "build:nozip": "npx cross-env NODE_ENV=production MEASURE=false npx webpack  --config ./config/webpack.base.config ",
     "build": "npx cross-env NODE_ENV=production MEASURE=false node ./scripts/build.js",
     "debuger": "nodemon  -w ./config/webpack.base.config --exec 'NODE_ENV=development npx webpack-dev-server --config ./config/webpack.base.config' ",
