@@ -17,8 +17,8 @@ steps:
 
 - script: |
     npm install
-    npm install --save-dev jest
-    npm i -D jest-junit-reporter
+    # npm install --save-dev jest
+    npm install -D jest-junit-reporter
     npm run build
     npm run test:cov
   displayName: 'npm install and build'
